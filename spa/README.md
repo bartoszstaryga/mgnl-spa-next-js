@@ -1,1 +1,0 @@
-# mgnl-spa-next-js

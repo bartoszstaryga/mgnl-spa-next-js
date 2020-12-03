@@ -1,0 +1,13 @@
+title: SPA Home
+dialog: spa-lm:pages/Page
+templateScript: http://localhost:3000
+renderType: spaExtended
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+areas:
+  main:
+    title: Main area
+    availableComponents:
+      text:
+        id: spa-lm:components/Text
+      list:
+        id: spa-lm:components/List
