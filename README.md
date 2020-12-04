@@ -4,7 +4,7 @@ Basic setup for **Magnolia** with WYSIWYG authoring and server side rendering wi
 
 ## Prerequisites
 
-- Magnolia DX Core
+- Magnolia DX Core (due to CORS setup minimum version 6.2.5)
 - SPA renderer extended ([git](https://git.magnolia-cms.com/projects/INCUBATOR/repos/spa-rendering-extended/browse/readme.md), [jar](https://nexus.magnolia-cms.com/service/local/artifact/maven/redirect?r=magnolia.incubator.releases&g=info.magnolia.pages&a=magnolia-spa-rendering-extended&v=1.0&e=jar))  
   Incubator module that extends the SPA renderer and offers remote loading for templateScript.  
   In this case loading from Next.js server.
@@ -65,7 +65,7 @@ Basic setup for **Magnolia** with WYSIWYG authoring and server side rendering wi
 
 1. Notice in `/spa/next.config.js` the `assetPrefix` that points to Next.js server.  
    For WYSIWYG editor `spaExtended` fetches page provided in `Template script` then renders it in iframe. This iframe source is in Magnolia's domain, hence need for full url for assets to ensure they are loaded from Next.js server.
-2. When creating new page in Magnolia user must provide `Template script` pointing to corresponding page on Next.js server.  
+2. When creating new page in Magnolia user must provide `Template script` pointing to corresponding page on Next.js server (static or dynamic routing).  
    Possible solution would be to extend `spaExtended` so that base url could be set via configuration and rest of the pathname could be automatically resolved form page name.
 3. In order to make sure that Next.js does not fetch `Template Definitions` outside Magnolia's WYSIWYG we use query parameter `mgnlPreview=false`. We need to remember to add it in `Template script`. Solving point `2` would solve this issue too.
 4. Current implementation of `@magnolia/react-editor` adds placeholders for `Template Annotations`. Placeholders are empty `divs`. Those placeholder are removed outside Magnolia's WYSIWYG, but the currently implemented check does not take into account SSR.  

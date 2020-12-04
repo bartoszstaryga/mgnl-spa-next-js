@@ -28,7 +28,7 @@ export async function getPage(context) {
 
   if (context.query.mgnlPreview === 'false') {
     const templateDefinitionsRes = await fetch(
-      'http://localhost:8080/magnoliaAuthor/.rest/templateDefinition/v1/' + page['mgnl:template']
+      'http://localhost:8080/magnoliaAuthor/.rest/template-definitions/v1/' + page['mgnl:template']
     );
 
     templateDefinitions = await templateDefinitionsRes.json();
