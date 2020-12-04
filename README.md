@@ -37,7 +37,7 @@ Basic setup for **Magnolia** with WYSIWYG authoring and server side rendering wi
 - Go to tab `Roles`.
 - Open `rest-anonymous` role.
 - In tab `Access control lists` find `Website` workspace and add `Read-only` for `Selected and sub nodes` for root node `/`.
-- In tab `Web access` add `Get` for `/.rest/templateDefinition/v1/*`.
+- In tab `Web access` add `Get` for `/.rest/template-definitions/v1/*`.
 
 4. In `Pages` app:
 
