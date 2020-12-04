@@ -56,7 +56,6 @@ Basic setup for **Magnolia** with WYSIWYG authoring and server side rendering wi
     - Template `SPA Basic`.
   - Second dialog:
     - Title of your choice.
-    - E.g. `http://localhost:3000/contact?mgnlPreview=false`
 - You can edit it in Magnolia and add some components. You should see that `http://localhost:3000/contact` renders page with content added via Magnolia's WYSIWYG.
 
 ## Magnolia x spaExtended x SSR with Next.js tweaks/issues
