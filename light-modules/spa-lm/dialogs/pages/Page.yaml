@@ -5,7 +5,3 @@ form:
       label: Title
       $type: textField
       required: true
-    templateScript:
-      $type: textField
-      label: Template script
-      required: true
