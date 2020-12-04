@@ -48,7 +48,6 @@ Basic setup for **Magnolia** with WYSIWYG authoring and server side rendering wi
     - Template `SPA Home`.
   - Second dialog:
     - Title of your choice.
-    - Template script `http://localhost:3000?mgnlPreview=false`.
 - You can edit it in Magnolia and add some components. You should see that `http://localhost:3000/` renders page with content added via Magnolia's WYSIWYG.
 - Create new page child page under `spa-home` with:
   - First dialog:
@@ -57,7 +56,6 @@ Basic setup for **Magnolia** with WYSIWYG authoring and server side rendering wi
     - Template `SPA Basic`.
   - Second dialog:
     - Title of your choice.
-    - Template script `http://localhost:3000/PAGE-NAME-FROM-POINT-1?mgnlPreview=false`.
     - E.g. `http://localhost:3000/contact?mgnlPreview=false`
 - You can edit it in Magnolia and add some components. You should see that `http://localhost:3000/contact` renders page with content added via Magnolia's WYSIWYG.
 
