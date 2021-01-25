@@ -74,11 +74,14 @@ Static generation can be used **only** on public instances.
 
 Author instance must have real time generation for the instant preview and WYSIWYG in Pages app.
 
+Using static generation developers must maintain 2 different version of their app. One for author instace and one for public instace.
+
 In order to see static generation working:
 
 1. Follow all Next.js and Magnolia installation steps from this example.
 2. Check out to **static-generation** branch.
 3. In `/spa/` run `npm run export`. You should have now `out` folder with static pages.
+4. Keep in mind that in order to be able to modify content you need to return to `main` branch setup and run Next.js server.
 
 ### Differences to server side rendering
 
