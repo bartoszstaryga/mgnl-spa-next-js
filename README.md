@@ -74,7 +74,7 @@ Static generation can be used **only** on public instances.
 
 Author instance must have real time generation for the instant preview and WYSIWYG in Pages app.
 
-Using static generation developers must maintain 2 different version of their app. One for author instace and one for public instace.
+Using static generation developers must maintain 2 different version of their app. One for author instance and one for public instance.
 
 In order to see static generation working:
 
