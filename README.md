@@ -67,3 +67,20 @@ Basic setup for **Magnolia** with WYSIWYG authoring and server side rendering wi
 3. ~~In order to make sure that Next.js does not fetch `Template Definitions` outside Magnolia's WYSIWYG we use query parameter `mgnlPreview=false`. We need to remember to add it in `Template script`. Solving point `2` would solve this issue too.~~ Solved in SPA renderer extended 1.1
 4. Current implementation of `@magnolia/react-editor` adds placeholders for `Template Annotations`. Placeholders are empty `divs`. Those placeholder are removed outside Magnolia's WYSIWYG, but the currently implemented check does not take into account SSR.  
    Generated page includes as many empty `div` elements as areas and components in the page. It needs to be taken into account when styling the page.
+
+## Static generation
+
+Static generation can be used **only** on public instances.
+
+Author instance must have real time generation for the instant preview and WYSIWYG in Pages app.
+
+In order to see static generation working:
+
+1. Follow all Next.js and Magnolia installation steps from this example.
+2. Check out to **static-generation** branch.
+3. In `/spa/` run `npm run export`. You should have now `out` folder with static pages.
+
+### Differences to server side rendering
+
+1. New `pagesPaths` endpoint. Needed to generate all static paths for slug based [...pages] template.
+2. **getStaticProps** used insted of **getServerSideProps**.
