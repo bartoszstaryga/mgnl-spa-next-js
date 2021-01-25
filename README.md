@@ -76,6 +76,8 @@ Author instance must have real time generation for the instant preview and WYSIW
 
 Using static generation developers must maintain 2 different version of their app. One for author instance and one for public instance.
 
+It could be solved with help of: https://nextjs.org/docs/advanced-features/preview-mode
+
 In order to see static generation working:
 
 1. Follow all Next.js and Magnolia installation steps from this example.
