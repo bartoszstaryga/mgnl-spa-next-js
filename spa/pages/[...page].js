@@ -1,11 +1,20 @@
 import { EditablePage } from '@magnolia/react-editor';
-import { getPage, config } from '../lib/pages';
+import { getPage, getPagesPaths, config } from '../lib/pages';
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const page = await getPage(context);
 
   return {
     props: page,
+  };
+}
+
+export async function getStaticPaths() {
+  const paths = await getPagesPaths();
+
+  return {
+    paths,
+    fallback: false,
   };
 }
 
