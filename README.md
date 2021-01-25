@@ -65,7 +65,7 @@ Basic setup for **Magnolia** with WYSIWYG authoring and server side rendering wi
 2. ~~When creating new page in Magnolia user must provide `Template script` pointing to corresponding page on Next.js server (static or dynamic routing).  
    Possible solution would be to extend `spaExtended` so that base url could be set via configuration and rest of the pathname could be automatically resolved form page name.~~ Solved in SPA renderer extended 1.1
 3. ~~In order to make sure that Next.js does not fetch `Template Definitions` outside Magnolia's WYSIWYG we use query parameter `mgnlPreview=false`. We need to remember to add it in `Template script`. Solving point `2` would solve this issue too.~~ Solved in SPA renderer extended 1.1
-4. Current implementation of `@magnolia/react-editor` adds placeholders for `Template Annotations`. Placeholders are empty `divs`. Those placeholder are removed outside Magnolia's WYSIWYG, but the currently implemented check does not take into account SSR.  
+4. Current implementation of `@magnolia/react-editor` adds placeholders for `Template Annotations`. Placeholders are empty `divs`. Those placeholder are removed in Magnolia's WYSIWYG, but the currently implemented check does not take into account SSR.  
    Generated page includes as many empty `div` elements as areas and components in the page. It needs to be taken into account when styling the page.
 
 ## Static generation
