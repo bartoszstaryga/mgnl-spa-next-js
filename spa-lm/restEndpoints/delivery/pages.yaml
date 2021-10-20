@@ -1,5 +1,5 @@
 class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
 workspace: website
-depth: 100
+depth: 10
 systemProperties:
   - mgnl:template

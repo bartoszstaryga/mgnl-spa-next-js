@@ -2,9 +2,9 @@ import React from 'react';
 import { EditableArea } from '@magnolia/react-editor';
 
 function List(props) {
-  const { list, metadata } = props;
+  const { list } = props;
 
-  return <ul>{list && <EditableArea content={list} parentTemplateId={metadata['mgnl:template']} />}</ul>;
+  return <ul>{list && <EditableArea content={list} />}</ul>;
 }
 
 export default List;

@@ -1,7 +1,6 @@
-label: Home properties
+label: Page properties
 form:
   properties:
     title:
       label: Title
       $type: textField
-      required: true
