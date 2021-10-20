@@ -5,7 +5,7 @@ Basic setup for **Magnolia** with WYSIWYG authoring and server side rendering wi
 ## Prerequisites
 
 - Magnolia DX Core (due to CORS setup minimum version 6.2.5)
-- SPA renderer extended [git](https://git.magnolia-cms.com/projects/INCUBATOR/repos/spa-rendering-extended/browse/readme.md))  
+- SPA renderer extended ([git](https://git.magnolia-cms.com/projects/INCUBATOR/repos/spa-rendering-extended/browse/readme.md))  
   Incubator module that extends the SPA renderer and offers remote loading for templateScript.  
   In this case loading from Next.js server.
 - magnolia-services-licence ([jar](https://nexus.magnolia-cms.com/service/local/artifact/maven/redirect?r=magnolia.incubator.releases&g=info.magnolia&a=magnolia-services-licence&v=1.0.2&e=jar))  
