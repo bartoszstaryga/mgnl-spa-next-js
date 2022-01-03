@@ -4,6 +4,8 @@ External SPA capability makes it possible for SPA project to be running on a rem
 
 Next.js demo can be found [here](https://git.magnolia-cms.com/projects/DEMOS/repos/minimal-headless-spa-demos/browse).
 
+---
+
 # mgnl-spa-next-js
 
 Basic setup for **Magnolia** with WYSIWYG authoring and server side rendering with **Next.js**.
